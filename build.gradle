@@ -40,7 +40,7 @@ def pomConfig = {
     licenses {
         license {
             name "MIT"
-            url "https://github.com/artfable/gradle-index-plugin/LICENSE"
+            url "https://github.com/artfable/gradle-index-plugin/master/LICENSE"
             distribution "repo"
         }
     }
