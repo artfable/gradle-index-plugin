@@ -66,3 +66,5 @@ indexConfig {
     // ... other configuration's blocks
 }
 ```
+
+To choose what configuration should be used set property `indexProfile` (for example: `-PindexProfile=dev`).
