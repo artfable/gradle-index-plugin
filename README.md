@@ -22,6 +22,8 @@ buildscript {
 apply plugin: 'artfable.index'
 ```
 
+It'll add a task `resolveIndex`
+
 ## Usage
 First, you need to create your template index file, and add `%MIN%` to imported files that has minified versions. 
 Then you should add `%MODULES%` to a place in the index file where you would like to add your js files.
