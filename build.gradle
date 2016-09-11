@@ -73,6 +73,7 @@ bintray {
     user = project.hasProperty('bintrayUser') ? project.ext.bintrayUser : System.getenv('BINTRAY_USER')
     key = project.hasProperty('bintrayKey') ? project.ext.bintrayKey : System.getenv('BINTRAY_KEY')
     publications = ['mavenJava']
+    override = true
     pkg {
         repo = 'gradle-plugins'
         name = 'gradle-index-plugin'
