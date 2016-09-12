@@ -10,9 +10,7 @@ for all types of builds. For example, you can set different index file for produ
 ```groovy
 buildscript {
     repositories {
-        maven {
-            url 'http://dl.bintray.com/artfable/gradle-plugins' // I hope that it'll be jcenter() in the future :)
-        }
+        jcenter()
     }
     dependencies {
         classpath "com.github.artfable.gradle:gradle-index-plugin:0.0.1"
