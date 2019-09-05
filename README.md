@@ -1,5 +1,5 @@
 # Gradle Resource Plugin
-(version: 0.0.1)
+(version: 0.0.2)
 
 ## Overview
 The plugin that was written on [kotlin](https://kotlinlang.org). 
@@ -13,7 +13,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath "com.github.artfable.gradle:gradle-index-plugin:0.0.1"
+        classpath "com.github.artfable.gradle:gradle-index-plugin:0.0.2"
     }
 }
 

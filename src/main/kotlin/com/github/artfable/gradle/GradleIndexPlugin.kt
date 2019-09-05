@@ -3,7 +3,7 @@ package com.github.artfable.gradle
 import org.gradle.api.NamedDomainObjectContainer
 import org.gradle.api.Plugin
 import org.gradle.api.Project
-import org.gradle.api.internal.plugins.DefaultExtraPropertiesExtension
+import org.gradle.api.plugins.ExtraPropertiesExtension
 import java.io.File
 import java.util.*
 
@@ -23,7 +23,7 @@ open class GradleIndexPlugin : Plugin<Project> {
         val task = project.task("resolveIndex")
         task.dependsOn("processResources")
         task.doFirst {
-            val properties: DefaultExtraPropertiesExtension = project.extensions.getByName("ext") as DefaultExtraPropertiesExtension
+            val properties: ExtraPropertiesExtension = project.extensions.getByName("ext") as ExtraPropertiesExtension
             var profile: String = "dev"
             if (properties.has(PROP_NAME)) {
                 profile = properties[PROP_NAME].toString()
